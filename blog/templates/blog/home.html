@@ -1,1 +1,13 @@
 <h1>My portfolio homepage</h1>
+{% for blogs in blog %}
+
+<h2>{{ blogs.title }}</h2>
+<br>
+<p>{{ blogs.body }}</p>
+<br>
+<img src="{{ blogs.thumbnails.url }}" height=200>
+
+<hr>
+
+
+{% endfor %}
